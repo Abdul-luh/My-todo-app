@@ -14,7 +14,7 @@ export default async function handleCheckItem(items, setItems, setFetchError, it
         
         // create a patch|update option 
         const updateOptions = {
-            method: "PATCH",
+            method: "PUT",
             headers: {
                 "Content-Type": "application/json"
             },
