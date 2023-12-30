@@ -10,7 +10,7 @@ export default async function handleCheckItem(items, setItems, setFetchError, it
         setItems(listItems)
 
         // select the checked item from the listItems 
-        const selectedItem = listItems.filter(item => item.id === itemId)
+        const selectedItem = listItems.filter(item => item.id === itemId)[0]
         
         // create a patch|update option 
         const updateOptions = {

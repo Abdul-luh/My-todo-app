@@ -106,7 +106,7 @@ useEffect(() => {
         {
           !loading && !fetchError && (
             <Contents
-              items={items.filter(itm => itm.item.toLowerCase().includes(search.toLocaleLowerCase()))}
+              items={items.filter(itm => itm.item.toLowerCase().includes(search.toLocaleLowerCase())).reverse()}
               handleCheck={handleCheck}
               handleDelete={handleDelete}
             />
